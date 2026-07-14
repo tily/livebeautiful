@@ -3,7 +3,12 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "tailwindcss -i ./assets/css/main.css -o ./static/css/main.css --minify",
+    "watch": "tailwindcss -i ./assets/css/main.css -o ./static/css/main.css --watch",
+    "dev": "npm-run-all --parallel watch hugo",
+    "hugo": "hugo server",
+    "build": "npm run css && hugo --minify"
   },
   "keywords": [],
   "author": "",
