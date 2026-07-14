@@ -27,3 +27,4 @@ pnpm-debug.log*
 *.swo
 
 .hugo_build.lock
+static/css/main.css

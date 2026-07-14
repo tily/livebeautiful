@@ -1,55 +1,62 @@
 {{ define "main" }}
 
+
 <section class="min-h-screen flex items-center justify-center">
-
-<div class="text-center">
-
-<p class="mt-6 text-xl text-gray-600">
-GO TAKEUCHI EXHIBITION
-</p>
-
-<h1 class="text-6xl font-bold">
-美しく生きる
-</h1>
-
-</div>
-
+  <div class="text-center">
+    <img src="{{ "images/artwork.png" | relURL }}">
+  </div>
 </section>
 
 <section class="py-24">
+  <div class="mx-auto max-w-5xl">
+  
+    <h2 class="text-3xl font-bold max-w-6xl px-6">
+    概要
+    </h2>
+    
+    <div class="text-center">
+    竹内が書きためた絵、撮りためた写真、その他の展示です。<br>
+    展示タイトルは影響を受けた<a href="https://www.beeast69.com/column/wajima/2601/">人間椅子・和嶋さんの文章</a>より。
+    </div>
+    
+    <div class="grid gap-6 mt-10 md:grid-cols-3 max-w-6xl px-6">
+      <div>
+        <h3>絵</h3>
+        <p><img src="{{ "images/drawing001.jpg" | relURL }}"></p>
+      </div>
+      
+      <div>
+        <h3>写真</h3>
+        <p><img src="{{ "images/photo001.jpg" | relURL }}"></p>
+      </div>
+      
+      <div>
+        <h3>その他</h3>
+        <p><img src="{{ "images/other001.jpg" | relURL }}"></p>
+      </div>
+    </div>
 
-<div class="mx-auto max-w-5xl">
+    <h2 class="text-3xl font-bold max-w-6xl px-6 mt-16">
+    リンク集 
+    </h2>
 
-<h2 class="text-3xl font-bold">
-概要
-</h2>
+    <div class="max-w-6x1 px-6">
+      <ul>
+        <li><a href="https://x.com/tily">X</a></li>
+        <li><a href="https://instagram.com/mofudeep">Instagram</a></li>
+        <li><a href="https://tily.base.shop">YYYY.MM.DD (絵の販売)</a></li>
+      </ul>
+    </div>
 
-<div class="text-center">
-竹内が書きためた絵、撮りためた写真、その他の展示です。<br>
-展示タイトルは影響を受けた<a href="https://www.beeast69.com/column/wajima/2601/">人間椅子・和嶋さんの文章</a>より。
-</div>
+    <h2 class="text-3xl font-bold max-w-6xl px-6 mt-16">
+    作者近影
+    </h2>
 
-<div class="grid gap-6 mt-10 md:grid-cols-3">
+    <div class="max-w-6x1 px-6">
+      <p><img src="{{ "images/takeuchi.jpg" | relURL }}"></p>
+    </div>
 
-<div>
-<h3>絵</h3>
-<p>aaa</p>
-</div>
-
-<div>
-<h3>写真</h3>
-<p>aaa</p>
-</div>
-
-<div>
-<h3>その他</h3>
-<p>aaa</p>
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
 {{ end }}
