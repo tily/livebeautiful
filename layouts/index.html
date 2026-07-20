@@ -1,17 +1,17 @@
 {{ define "main" }}
 
 
-<section class="min-h-screen flex items-center justify-center">
+<section>
   <div class="text-center">
     <img src="{{ "images/artwork.png" | relURL }}">
   </div>
 </section>
 
-<section class="py-24">
+<section class="py-2">
   <div class="mx-auto max-w-5xl">
   
-    <h2 class="text-3xl font-bold max-w-6xl px-6 mt-16 text-center">
-    HELLO
+    <h2 class="text-3xl font-bold max-w-6xl px-6 mt-12 mb-3 text-center">
+    この展示について
     </h2>
     
     <div class="text-center">
@@ -26,52 +26,56 @@
     だいたい在廊してると思うので、よかったら来てね。
     </div>
 
-    <h2 class="text-3xl font-bold max-w-6xl px-6 mt-16 text-center">
-    WORKS 
+    <h2 class="text-3xl font-bold max-w-6xl px-6 mt-12 mb-3 text-center">
+    作品紹介
     </h2>
 
     <div class="text-center">
-    こんな感じの作品を展示してる予定です<br>
+    こんな感じの作品を展示してる予定です。<br>
     </div>
     
     <div class="grid gap-6 mt-10 md:grid-cols-3 max-w-6xl px-6">
-      <div>
+      <div class="space-y-6">
         <h3>絵</h3>
-        <p><img src="{{ "images/drawing001.thumb.jpg" | relURL }}"></p>
-        <p><img src="{{ "images/drawing002.thumb.jpg" | relURL }}"></p>
-        <p><img src="{{ "images/drawing003.thumb.jpg" | relURL }}"></p>
+        <p><img class="block w-full h-auto" src="{{ "images/drawing001.thumb.jpg" | relURL }}"></p>
+        <p><img class="block w-full h-auto" src="{{ "images/drawing002.thumb.jpg" | relURL }}"></p>
+        <p><img class="block w-full h-auto" src="{{ "images/drawing003.thumb.jpg" | relURL }}"></p>
       </div>
       
-      <div>
+      <div class="space-y-6">
         <h3>写真</h3>
-        <p><img src="{{ "images/photo001.thumb.jpg" | relURL }}"></p>
-        <p><img src="{{ "images/photo002.thumb.jpg" | relURL }}"></p>
-        <p><img src="{{ "images/photo003.thumb.jpg" | relURL }}"></p>
+        <p><img class="block w-full h-auto" src="{{ "images/photo001.thumb.jpg" | relURL }}"></p>
+        <p><img class="block w-full h-auto" src="{{ "images/photo002.thumb.jpg" | relURL }}"></p>
+        <p><img class="block w-full h-auto" src="{{ "images/photo003.thumb.jpg" | relURL }}"></p>
       </div>
       
-      <div>
+      <div class="space-y-6">
         <h3>その他</h3>
-        <p><img src="{{ "images/other001.thumb.jpg" | relURL }}"></p>
-        <p><img src="{{ "images/other002.thumb.jpg" | relURL }}"></p>
-        <p><img src="{{ "images/other003.thumb.jpg" | relURL }}"></p>
+        <p><img class="block w-full h-auto" src="{{ "images/other001.thumb.jpg" | relURL }}"></p>
+        <p><img class="block w-full h-auto" src="{{ "images/other002.thumb.jpg" | relURL }}"></p>
+        <p><img class="block w-full h-auto" src="{{ "images/other003.thumb.jpg" | relURL }}"></p>
       </div>
     </div>
 
-    <h2 class="text-3xl font-bold max-w-6xl px-6 mt-16">
-    Links
+    <h2 class="text-3xl font-bold max-w-6xl px-6 mt-12 mb-3 text-center">
+    リンク集
     </h2>
 
     <div class="max-w-6x1 px-6">
       <ul class="list-disc">
-        <li><a class="text-blue-500 underline hover:text-blue-700 hover:no-underline transition" href="https://x.com/search?q=%23美しく生きる">X #美しく生きる</a></li> 展示の情報いろいろ発信してます
-        <li><a class="text-blue-500 underline hover:text-blue-700 hover:no-underline transition" href="https://instagram.com/mofudeep">Instagram</a></li> ぼくのインスタ、こちらも展示の情報いろいろ
-        <li><a class="text-blue-500 underline hover:text-blue-700 hover:no-underline transition" href="https://tily.base.shop">YYYY.MM.DD</a></li> 展示してる絵の一部を販売してます
+        <li><a class="text-blue-500 underline hover:text-blue-700 hover:no-underline transition" href="https://x.com/search?q=%23美しく生きる">X #美しく生きる ハッシュタグ検索結果</a></li> 展示の情報いろいろ発信してます。
+        <li><a class="text-blue-500 underline hover:text-blue-700 hover:no-underline transition" href="https://instagram.com/mofudeep">Instagram ユーザー mofudeep</a></li> ぼくのインスタ、こちらも展示の情報いろいろ。
+        <li><a class="text-blue-500 underline hover:text-blue-700 hover:no-underline transition" href="https://tily.base.shop">BASE ネットショップ YYYY.MM.DD</a></li> 展示してる絵の一部を販売してます。
       </ul>
     </div>
 
-    <h2 class="text-3xl font-bold max-w-6xl px-6 mt-16">
-    Me
+    <h2 class="text-3xl font-bold max-w-6xl px-6 mt-12 mb-3 text-center">
+    作者近影
     </h2>
+
+    <div class="text-center">
+    こんにちは。
+    </div>
 
     <div class="flex flex-col md:flex-row gap-4 p-4">
       <img src="{{ "images/takeuchi001.thumb.jpg" | relURL }}" class="w-full md:w-1/3 object-cover" />
